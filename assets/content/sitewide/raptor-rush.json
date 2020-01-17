@@ -1,0 +1,22 @@
+{
+  "company_name": "Raptor Rush",
+  "company_address_line_1": "Boise, ID 83702",
+  "company_phone_number": "1-208-794-9008",
+  "company_email_address": "contact@raptorrush.com",
+  "footer_details": {
+    "footer_company_para": "",
+    "footer_copyright": "(c) 2020 Raptor Rush"
+  },
+  "contact_form": {
+    "items": [
+      {
+        "text": "Name",
+        "required": true,
+        "short_name": "name",
+        "placeholder": "E.G. John Smith",
+        "type": "text"
+      }
+    ],
+    "button_text": "Submit"
+  }
+}
