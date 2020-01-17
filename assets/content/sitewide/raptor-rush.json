@@ -7,6 +7,9 @@
     "footer_company_para": "",
     "footer_copyright": "(c) 2020 Raptor Rush"
   },
+  "social_media": {
+    "footer_show_social": false
+  },
   "contact_form": {
     "items": [
       {
