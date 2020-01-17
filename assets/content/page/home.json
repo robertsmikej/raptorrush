@@ -3,7 +3,7 @@
   "hero": {
     "hero_header": "Raptor Rush",
     "hero_para": "We'll make your mammoth technology issues extinct.",
-    "hero_small": true
+    "hero_small": false
   },
   "page_intro": {
     "status": true
