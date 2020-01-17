@@ -1,0 +1,11 @@
+{
+  "page_name": "home",
+  "hero": {
+    "hero_header": "It's a Jungle Out There.",
+    "hero_para": "We'll make your mammoth technology problems extinct.",
+    "hero_small": true
+  },
+  "page_intro": {
+    "status": true
+  }
+}
