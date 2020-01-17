@@ -1,0 +1,11 @@
+{
+  "title": "Main Nav",
+  "status": true,
+  "nav_items": [
+    {
+      "title": "Home",
+      "status": true,
+      "link": "/"
+    }
+  ]
+}
