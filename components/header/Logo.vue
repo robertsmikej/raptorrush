@@ -15,13 +15,13 @@ export default {
 
 <style>
     .site__logo__container {
-        padding: 6px 8px 6px 8px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
         justify-content: center; 
     }
     .site__logo {
-        max-height: 72px;
+        max-height: 70px;
         align-self: center;
         object-fit: contain;
         transition: transform 2.3s ease-in-out;

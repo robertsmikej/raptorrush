@@ -117,7 +117,7 @@ export default {
         background-color: var(--dark-grey);
     }
     .header__name span:nth-of-type(1) {
-        font-weight: 500;
+        font-weight: 600;
     }
     .header__name span {
         margin-right: 2px;

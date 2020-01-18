@@ -108,7 +108,6 @@ main {
     opacity: 0;
 }
 h1 {
-    text-align: left;
     font-size: 2.4em;
     line-height: 1em;
     font-weight: 500;
@@ -196,6 +195,12 @@ a {
         font-size: 18px;
         line-height: 18px;
     } 
+}
+/* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 2.2em;
+    }
 }
 /* ----------------------------  MEDIA QUERY ------------------------------ */
 @media screen and (max-width:900px) {

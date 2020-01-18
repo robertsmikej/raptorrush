@@ -2,7 +2,7 @@
     <div class="hero">
         <div v-if="hero" class="hero__inner">
             <div class="hero__text__container">
-                <h1 v-if="hero.hero_header" class="hero__header">{{ hero.hero_header }}</h1>
+                <h1 v-if="hero.hero_header" class="hero__header"><span >{{ hero.hero_header }}</span><span v-if="hero.hero_header_2">{{ hero.hero_header_2 }}</span></h1>
                 <p v-if="hero.hero_para" class="hero__para">{{ hero.hero_para }}</p>
                 <div v-if="hero.hero_button_text" class="hero__button__container">
                     <SiteButton :buttonLink="hero.hero_button_link" :buttonText="hero.hero_button_text" :backgroundColor="1" :color="1"/>
@@ -46,6 +46,9 @@ export default {
     background: linear-gradient(to bottom, #79A7B4, #5F828D);
     background: #FFF;
 }
+.hero span {
+    display: block;
+}
 .hero__inner {
     z-index: 3;
     width: 100%;
@@ -68,6 +71,7 @@ export default {
     flex-direction: column;
     align-content: flex-start;
     justify-content: center;
+    text-align: left;
 }
 .hero__para {
     font-weight: 400;
@@ -91,13 +95,33 @@ export default {
     max-width: 600px;
 }
 /* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 1400px) {
+    .hero__sub__image__container img {
+        max-width: 500px;
+    }
+    .hero__text__container {
+        max-width: 490px;
+    }
+}
+/* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 1200px) {
+    .hero__sub__image__container {
+        padding: 10px 20px;
+    }
+    .hero__sub__image__container img {
+        max-width: 400px;
+    }
+}
+/* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 1000px) {
     .hero__inner {
         padding: 50px 6vw 50px;
     }
     .hero__sub__image__container img {
-        max-width: 400px;
+        max-width: 300px;
+        object-fit: contain;
     }
+
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 700px) {
@@ -108,19 +132,34 @@ export default {
         width: 50%;
     }
     .hero__sub__image__container img {
-        max-width: 140px;
+        max-width: 240px;
     }
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 600px) {
+    .hero__inner {
+        padding: 10px 2vw 40px;
+        flex-direction: column-reverse;
+    }
+    .hero__sub__image__container {
+        width: 100%;
+        margin: 10px auto;
+    }
     .hero__sub__image__container img {
-        max-width: 90px;
+        max-width: 300px;
+    }
+    .hero__text__container, .hero__para {
+       text-align: center;
+    }
+    .hero__button__container {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 400px) {
     .hero__sub__image__container img {
-        max-width: 80px;
+        max-width: 80%;
     }
 }
 </style>
