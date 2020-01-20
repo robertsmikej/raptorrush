@@ -56,6 +56,7 @@ export default {
     --light-blue: #F1F5F6;
     --dark-blue: #36485f;
     --dark-grey: #2B373C;
+    --dark-grey: #263E47;
     --lime-green: #98C93C;
     --light-red: #CF2255;
     --deep-red: #901D00;
@@ -64,12 +65,16 @@ export default {
     --powder-blue: #BCF2FC;
     --turkish-blue: #50A3B1;
     --default-font: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-    --text-color: #2B373C;
+    --light-green: #94AC9E;
+    --medium-green: #72918B;
+    --dark-green: #496568;
+    --text-color: #273F49;
 }
 body, html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: var(--dark-grey);
 }
 body * {
     box-sizing: border-box;
@@ -108,10 +113,10 @@ main {
     opacity: 0;
 }
 h1 {
-    font-size: 2.4em;
-    line-height: 1em;
+    font-size: 2.1em;
+    line-height: 1.1em;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 10px 0 0;
     /* color: #FFF; */
 }
 h2 {
@@ -232,6 +237,10 @@ a {
 }
 /* ----------------------------  MEDIA QUERY ------------------------------ */
 @media screen and (max-width: 500px) {
+    h1 {
+        font-size: 1.4em;
+        line-height: 1.1em;
+    }
     h2 {
         font-size: 1.5em;
         line-height: 1em;

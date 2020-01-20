@@ -77,4 +77,11 @@ export default {
     color: #FFF !important;
     font-size: 1.1em !important;
 }
+/* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 900px) {
+    .site__button__inner {
+        font-size: .8em;
+        padding: 6px 14px;
+    }
+}
 </style>

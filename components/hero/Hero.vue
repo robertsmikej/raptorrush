@@ -1,6 +1,9 @@
 <template>
     <div class="hero">
         <div v-if="hero" class="hero__inner">
+            <div v-if="hero.hero_background_image" class="hero__background__container">
+                <img :src="hero.hero_background_image" alt="Landscape Header Photo" class="hero__background__image">
+            </div>
             <div class="hero__text__container">
                 <h1 v-if="hero.hero_header" class="hero__header"><span >{{ hero.hero_header }}</span><span v-if="hero.hero_header_2">{{ hero.hero_header_2 }}</span></h1>
                 <p v-if="hero.hero_para" class="hero__para">{{ hero.hero_para }}</p>
@@ -43,18 +46,33 @@ export default {
     position: relative;
     overflow: hidden;
     margin: 0;
-    background: linear-gradient(to bottom, #79A7B4, #5F828D);
     background: #FFF;
 }
 .hero span {
     display: block;
+}
+.hero__background__container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.hero__background__image {
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
 }
 .hero__inner {
     z-index: 3;
     width: 100%;
     max-width: 1600px;
     max-height: 840px;
-    padding: 80px 6vw 80px;
+    padding: 14vh 6vw 14vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -66,16 +84,21 @@ export default {
 .hero__text__container {
     width: 100%;
     margin: 0;
-    max-width: 560px;
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     justify-content: center;
     text-align: left;
+    z-index: 1;
+}
+.hero__header {
+    color: #FFF;
 }
 .hero__para {
     font-weight: 400;
     text-align: left;
+    color: #FFF;
 }
 .hero__button__container {
     display: flex;
@@ -96,70 +119,54 @@ export default {
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 1400px) {
-    .hero__sub__image__container img {
-        max-width: 500px;
-    }
     .hero__text__container {
         max-width: 490px;
     }
 }
-/* ------------------ MEDIA QUERY ------------------ */
-@media screen and (max-width: 1200px) {
-    .hero__sub__image__container {
-        padding: 10px 20px;
-    }
-    .hero__sub__image__container img {
-        max-width: 400px;
-    }
-}
-/* ------------------ MEDIA QUERY ------------------ */
+/* ----------------- MEDIA QUERY ------------------ */
 @media screen and (max-width: 1000px) {
     .hero__inner {
-        padding: 50px 6vw 50px;
+        padding: 0;
     }
-    .hero__sub__image__container img {
-        max-width: 300px;
-        object-fit: contain;
+    .hero__background__container {
+        position: relative;
+        bottom: inherit;
+        left: inherit;
+    }
+    .hero__text__container {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 8px;
+    }
+    .hero__background__image {
+        width: 114%;
     }
 
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 700px) {
-    .hero__inner {
-        padding: 50px 5vw 50px;
-    }
-    .hero__sub__image__container {
-        width: 50%;
-    }
-    .hero__sub__image__container img {
-        max-width: 240px;
-    }
+    
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 600px) {
-    .hero__inner {
-        padding: 10px 2vw 40px;
-        flex-direction: column-reverse;
-    }
-    .hero__sub__image__container {
-        width: 100%;
-        margin: 10px auto;
-    }
-    .hero__sub__image__container img {
-        max-width: 300px;
+    .hero__text__container {
+        padding: 0 7vw;
     }
     .hero__text__container, .hero__para {
-       text-align: center;
+       /* text-align: center; */
     }
     .hero__button__container {
-        margin-left: auto;
-        margin-right: auto;
+
     }
-}
-/* ------------------ MEDIA QUERY ------------------ */
-@media screen and (max-width: 400px) {
-    .hero__sub__image__container img {
-        max-width: 80%;
+    .hero__header {
+        margin-top: 0px;
+    }
+    .hero__para {
+        margin-top: 6px;
+        font-weight: 300;
     }
 }
 </style>

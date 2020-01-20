@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import Logo from '~/components/header/Logo.vue';
+
 // import VueScrollTo from '~/plugins/vue-scrollto.js';
 
 export default {
@@ -46,7 +46,7 @@ export default {
         }
     },
     components: {
-        Logo
+        
     },
     props: {
         sitewide: Object,
@@ -81,10 +81,11 @@ export default {
         display: flex;
         flex-direction: row;
         box-sizing: border-box;
-        padding: 0 0 2px;
+        padding: 0;
         z-index: 20;
         transition: all .7s;
-        background-color: var(--dark-grey);
+        background-color: #FFF;
+        color: var(--text-color);;
     }
     .header__inner {
         max-width: 1400px;
@@ -110,11 +111,7 @@ export default {
         margin: 0;
         align-self: center;
         text-align: left;
-        color: #FFF;
         transition: color .4s;
-    }
-    .header__dark {
-        background-color: var(--dark-grey);
     }
     .header__name span:nth-of-type(1) {
         font-weight: 600;
@@ -123,15 +120,29 @@ export default {
         margin-right: 2px;
     }
 
+    .site__logo__container {
+        padding: 8px 8px 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .site__logo {
+        max-height: 36px;
+        align-self: center;
+        object-fit: contain;
+        transition: transform 2.3s ease-in-out;
+        transition: all .4s;
+    }
     .site__nav {
         margin-left: auto;
         align-self: center;
         order: 2;
         padding-right: 10px;
     }
+
     .nav__icon {
         width: 24px;
-        height: 28px;
+        height: 26px;
         padding: 5px 0;
         box-sizing: border-box;
         z-index: 20;
@@ -148,8 +159,7 @@ export default {
         width: 24px;
         height: 2px;
         align-self: center;
-        background-color: var(--dark-grey);
-        background-color: #FFF;
+        background-color: var(--text-color);
         position: absolute;
         top: 0;
         left: 0;
@@ -229,7 +239,7 @@ export default {
         display: block;
     }
     .nav__link {
-        color: #FFF;
+        
         font-size: 3em;
         line-height: 1em;
         font-weight: 300;
@@ -243,8 +253,12 @@ export default {
     }
     /* ------------------ MEDIA QUERY ------------------ */
     @media screen and (max-width: 1000px) {
-        .site__logo {
-            height: 42px;
+        .site__logo__container {
+            padding-right: 4px;
         }
+        .site__logo {
+            height: 30px;
+        }
+
     }
 </style>
