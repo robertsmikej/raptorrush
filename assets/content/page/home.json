@@ -2,10 +2,10 @@
   "page_name": "home",
   "hero": {
     "hero_header": "Affiliate Marketing.",
-    "hero_header_2": "Out Of The Stone Age.",
-    "hero_para": "We'll make your mammoth technology issues extinct.",
+    "hero_header_2": "Lorem ipsum dolor sit amet consectetur",
+    "hero_para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
     "hero_button_text": "Reach Out",
-    "hero_sub_image": "/img/caveman1.png",
+    "hero_sub_image": "",
     "hero_small": false
   },
   "page_intro": {
