@@ -12,7 +12,9 @@
   },
   "page_intro": {
     "status": true,
-    "page_intro_header": "Need a little help? Or maybe a lot? We're here.",
+    "page_intro_header": "Need a little help?",
+    "page_intro_header_2": "Or maybe a lot?",
+    "page_intro_header_3": "We're here.",
     "page_intro_para": "Let us take the confusion out of managing your offers, help you take them to the next level, and do all the things that you may not have the time or specialized knowledge to do."
   },
   "sections": [
