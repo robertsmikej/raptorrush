@@ -2,7 +2,8 @@ export const state = () => ({
     pages: {},
     nav: [],
     sitewide: {},
-    employees: {}
+    employees: {},
+    platforms: {}
 });
 
 function sortItems(data) {
@@ -44,15 +45,18 @@ export const mutations = {
     },
     setEmployees(state, data) {
         state.employees = data.list;
+    },
+    setPlatforms(state, data) {
+        state.platforms = data.list;
     }
-    
 };
 
 export const getters = {
     sitewide: state => state.sitewide,
     nav: state => state.nav,
     pages: state => state.pages,
-    employees: stats => state.employees
+    employees: state => state.employees,
+    platforms: state => state.platforms
 };
 
 export const actions = {
@@ -81,12 +85,20 @@ export const actions = {
         });
         await commit('setSitewide', sitewides[0]);
 
-        let files = await require.context('~/assets/content/employees/', false, /\.json$/);
-        let file = files.keys().map(key => {
-            let res = files(key);
+        var files = await require.context('~/assets/content/employees/', false, /\.json$/);
+        var file = files.keys().map(key => {
+            var res = files(key);
             res.slug = key.slice(2, -5);
             return res;
         });
         await commit('setEmployees', file[0]);
+
+        var files = await require.context('~/assets/content/platforms/', false, /\.json$/);
+        var file = files.keys().map(key => {
+            var res = files(key);
+            res.slug = key.slice(2, -5);
+            return res;
+        });
+        await commit('setPlatforms', file[0]);
     }
 };

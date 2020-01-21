@@ -1,10 +1,9 @@
 <template>
     <main>
         <Hero :hero="pageInfo.hero"/>
+        <Platforms :platforms="platforms"/>
         <PageIntro :intro="pageInfo.page_intro"/>
         <Employees :employees="employees" :pageInfo="pageInfo"/>
-
-
         <section id="contact-us" class="page__section contact__section">
             <SectionHeader :header="'Contact Us'" :para="''"/>
             <Contact :contact="sitewide.contact_form"/>
@@ -18,6 +17,7 @@ import PageIntro from '~/components/general/PageIntro.vue';
 import Contact from '~/components/contact/Contact.vue';
 import SectionHeader from '~/components/general/SectionHeader.vue';
 import Employees from '~/components/employees/EmployeeCells.vue';
+import Platforms from '~/components/platforms/Platforms.vue';
 
 export default {
     scrollToTop: true,
@@ -26,7 +26,8 @@ export default {
         PageIntro,
         Contact,
         SectionHeader,
-        Employees
+        Employees,
+        Platforms
     },
     transition: 'bounce',
     computed: {
@@ -38,6 +39,9 @@ export default {
         },
         employees: function () {
             return this.$store.state.employees
+        },
+        platforms: function () {
+            return this.$store.state.platforms
         }
     },
     methods: {

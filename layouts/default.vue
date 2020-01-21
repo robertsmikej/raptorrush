@@ -145,8 +145,8 @@ h5 {
     margin: 10px auto 0;
 }
 h6 {
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: .8em;
+    line-height: 1em;
     font-weight: 300;
     margin: 10px auto 0;
 }
