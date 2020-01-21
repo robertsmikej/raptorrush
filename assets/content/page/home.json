@@ -3,7 +3,7 @@
   "hero": {
     "hero_header": "Affiliate Management and Technology Support",
     "hero_header_2": "",
-    "hero_para": "Let us take the confusion out of managing your offers, help you take them to the next level, and do all the things that you may not have the time or specialized knowledge to do.",
+    "hero_para": "",
     "hero_button_text": "Reach Out",
     "hero_button_link": "#contact-us",
     "hero_background_image": "/img/hero_background_2.jpg",
@@ -12,8 +12,8 @@
   },
   "page_intro": {
     "status": true,
-    "page_intro_header": "Lorem ipsum dolor sit amet consectetur.",
-    "page_intro_para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "page_intro_header": "Need a little help? Or maybe a lot? We're here.",
+    "page_intro_para": "Let us take the confusion out of managing your offers, help you take them to the next level, and do all the things that you may not have the time or specialized knowledge to do."
   },
   "sections": [
     {
@@ -21,7 +21,7 @@
       "status": true,
       "section_text": [
         {
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          "text": "We're a couple of dreamers currently residing in Boise, Idaho. Our current large goal is to stop working for the man, and transition our skills into something that helps us grow and makes your offer the best it can be."
         }
       ]
     }
