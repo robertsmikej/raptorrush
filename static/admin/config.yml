@@ -132,3 +132,27 @@ collections:
           widget: "list"
           fields:
           - { label: 'Text', name: 'text', widget: 'markdown', required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list"] }
+
+  - name: 'employees'
+    label: 'Employees'
+    identifier_field: name
+    format: 'json'
+    folder: 'assets/content/employees'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Employee List Name', name: 'name', widget: 'string', required: false }
+      - label: "Employees"
+        name: "list"
+        widget: "list"
+        fields:
+        - { label: 'Name', name: 'name', widget: 'string', required: false }
+        - { label: 'Show Employee', name: 'status', widget: 'boolean', default: false}
+        - { label: 'Title', name: 'title', widget: 'string', required: false }
+        - { label: 'Speciality', name: 'speciality', widget: 'string', required: false }
+        - { label: 'Email Address', name: 'email', widget: 'string', required: false }
+        - { label: 'Headshot', name: 'headshot', widget: 'image', required: false }
+        - { label: 'Short Description', name: 'short_text', widget: 'text', required: false }
+        - { label: 'Long Text', name: 'long_text', widget: 'markdown', required: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "bulleted-list", "numbered-list"] }

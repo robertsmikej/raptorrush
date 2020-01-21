@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <div class="header__inner" >
-            <div class="site__nav">
+            <!-- <div class="site__nav">
                 <div class="nav__icon" @click="navToggle(); navBarsToX();" :class="{navchanger: navChanged}">
                     <div class="nav__lines">
                         <div class="nav__line nav__line--1"></div>
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                 </nav>
-            </div>
+            </div> -->
             <div @click="navToggle(false)">
                 <nuxt-link to="/" class="header__logo__and__name">
                     <div class="site__logo__container">

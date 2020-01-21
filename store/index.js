@@ -1,7 +1,8 @@
 export const state = () => ({
     pages: {},
     nav: [],
-    sitewide: {}
+    sitewide: {},
+    employees: {}
 });
 
 function sortItems(data) {
@@ -40,22 +41,20 @@ export const mutations = {
     },
     setSitewide(state, data) {
         state.sitewide = data;
+    },
+    setEmployees(state, data) {
+        console.log(data.list);
+        state.employees = data.list;
     }
+    
 };
 
 export const getters = {
     sitewide: state => state.sitewide,
     nav: state => state.nav,
     pages: state => state.pages,
+    employees: stats => state.employees
 };
-
-function getData(files) {
-    var f = files.keys().map(key => {
-        let res = files(key);
-        res.slug = key.slice(2, -5);
-        return f;
-    });
-}
 
 export const actions = {
     async nuxtServerInit({ commit }) {
@@ -82,5 +81,13 @@ export const actions = {
             return res;
         });
         await commit('setSitewide', sitewides[0]);
+
+        let files = await require.context('~/assets/content/employees/', false, /\.json$/);
+        let file = files.keys().map(key => {
+            let res = files(key);
+            res.slug = key.slice(2, -5);
+            return res;
+        });
+        await commit('setEmployees', file[0]);
     }
 };
