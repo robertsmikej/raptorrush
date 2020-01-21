@@ -14,11 +14,11 @@
 </template>
 
 <script>
-
+import SectionHeader from '~/components/general/SectionHeader.vue';
 
 export default {
     components: {
-        
+        SectionHeader
     },
     props: {
         employee: Object
@@ -29,7 +29,7 @@ export default {
 <style>
 .employee__cell {
     flex: 1;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 .employee__image__container {
     width: 100%;    
@@ -41,7 +41,7 @@ export default {
     margin: 0 auto 10px;
 }
 .employee__text__container {
-    padding: 8px 4vw;
+    padding: 8px 3vw;
 }
 .employee__name {
     
@@ -51,13 +51,30 @@ export default {
 }
 .employee__speciality {
     margin: 2px 0;
+    min-height: 52px;
 }
 .employee__email {
     color: #FFF;
+    text-decoration: none;
 }
 .employee__small__para {
     font-weight: 300;
-    text-align: left
+    text-align: left;
 }
-
+/* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 600px) {
+    .employee__cell {
+        margin: 30px 0 0;
+    }
+    .employee__text__container {
+        padding: 2px 3vw 8px;
+    }
+    .employee__speciality {
+        min-height: 0;
+    }
+    .employee__small__para {
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}
 </style>

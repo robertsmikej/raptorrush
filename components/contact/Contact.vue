@@ -96,9 +96,9 @@ export default {
     .contact__form__container fieldset {
         border: none;
     }
-    .contact__box__inner .contact__form__container p {
+    .contact__form p {
         text-align: left;
-        margin: 6px 0 0;
+
         color: var(--dark-grey);
     }
     .contact__form__container input {

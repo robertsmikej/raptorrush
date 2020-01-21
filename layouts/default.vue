@@ -75,6 +75,7 @@ body, html {
     margin: 0;
     box-sizing: border-box;
     background-color: var(--dark-grey);
+    scroll-behavior: smooth;
 }
 body * {
     box-sizing: border-box;
@@ -120,10 +121,10 @@ h1 {
     /* color: #FFF; */
 }
 h2 {
-    font-size: 1.9em;
+    font-size: 1.8em;
     line-height: 1em;
     font-weight: 500;
-    margin: 10px 0;
+    margin: 4px 0;
 }
 h3 {
     font-size: 1.5em;
@@ -242,10 +243,17 @@ a {
         line-height: 1.1em;
     }
     h2 {
-        font-size: 1.5em;
-        line-height: 1em;
-        font-weight: 500;
-        margin: 10px 0;
+        font-size: 1.4em;
+        margin: 4px 0;
+    }
+    body .page__section {
+        padding: 7vh 14px;
+    }
+}
+/* ------------------ MEDIA QUERY ------------------ */
+@media screen and (max-width: 400px) {
+    body .page__section {
+        padding: 7vh 10px;
     }
 }
 </style>

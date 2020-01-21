@@ -8,6 +8,7 @@
                 <h1 v-if="hero.hero_header" class="hero__header"><span >{{ hero.hero_header }}</span><span v-if="hero.hero_header_2">{{ hero.hero_header_2 }}</span></h1>
                 <p v-if="hero.hero_para" class="hero__para">{{ hero.hero_para }}</p>
                 <div v-if="hero.hero_button_text" class="hero__button__container">
+                    
                     <SiteButton :buttonLink="hero.hero_button_link" :buttonText="hero.hero_button_text" :backgroundColor="1" :color="1"/>
                 </div>
             </div>

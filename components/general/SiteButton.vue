@@ -1,14 +1,14 @@
 <template>
     <div class="site__button">
-        <nuxt-link v-if="buttonLink && buttonLink !== '#contactScroll'" :to="buttonLink" :style="{backgroundColor: backgroundcolor, border: '1px solid ' + backgroundcolor, color: textcolor}" class="site__button__inner">
+        <nuxt-link v-if="buttonLink && buttonLink !== '#contact-us'" :to="buttonLink" :style="{backgroundColor: backgroundcolor, border: '1px solid ' + backgroundcolor, color: textcolor}" class="site__button__inner">
             {{ buttonText }}
         </nuxt-link>
         <div v-if="!buttonLink" :style="{backgroundColor: backgroundcolor, border: '1px solid ' + backgroundcolor, color: textcolor}" class="site__button__inner">
             {{ buttonText }}
         </div>
-        <div v-if="buttonLink && buttonLink === '#contactScroll'" :style="{backgroundColor: backgroundcolor, border: '1px solid ' + backgroundcolor, color: textcolor}" v-scroll-to="'#contact__box'" class="site__button__inner">
+        <a v-if="buttonLink && buttonLink === '#contact-us'" :style="{backgroundColor: backgroundcolor, border: '1px solid ' + backgroundcolor, color: textcolor}" :href="buttonLink" class="site__button__inner">
             {{ buttonText }}
-        </div>
+        </a>
     </div>
 </template>
 

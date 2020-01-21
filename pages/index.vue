@@ -2,11 +2,10 @@
     <main>
         <Hero :hero="pageInfo.hero"/>
         <PageIntro :intro="pageInfo.page_intro"/>
-        <section class="page__section employee__section">
-            <SectionHeader :header="pageInfo.sections.meet_us.header" :para="pageInfo.sections.meet_us.section_text[0].text"/>
-            <Employees :employees="employees"/>
-        </section>
-        <section class="page__section contact__section">
+        <Employees :employees="employees" :pageInfo="pageInfo"/>
+
+
+        <section id="contact-us" class="page__section contact__section">
             <SectionHeader :header="'Contact Us'" :para="''"/>
             <Contact :contact="sitewide.contact_form"/>
         </section>
@@ -64,6 +63,7 @@ export default {
 <style>
 .contact__section {
     background-color: var(--medium-green);
+    scroll-behavior: smooth;
 }
 .contact__section .page__section__header {
     color: #FFF;

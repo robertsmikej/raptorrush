@@ -1,17 +1,23 @@
 <template>
-    <div class="page__section__inner employee__cells__inner">
-        <Employee v-for="(employee, index) in employees" :key="index" :employee="employee"/>
-    </div>
+    <section class="page__section employee__section">
+        <SectionHeader :header="pageInfo.sections.meet_us.header" :para="pageInfo.sections.meet_us.section_text[0].text"/>
+        <div class="page__section__inner employee__cells__inner">
+            <Employee v-for="(employee, index) in employees" :key="index" :employee="employee"/>
+        </div>
+    </section>
 </template>
 
 <script>
 import Employee from '~/components/employees/Employee.vue';
+import SectionHeader from '~/components/general/SectionHeader.vue';
 
 export default {
     components: {
-        Employee
+        Employee,
+        SectionHeader
     },
     props: {
+        pageInfo: Object,
         employees: Array
     }
 }

@@ -28,7 +28,7 @@
                     <div class="site__logo__container">
                         <img class="site__logo" :src="sitewide.company_logo" :alt="sitewide.company_name + ' Logo'">
                     </div>
-                    <h2 class="header__name"><span>{{ boldName(sitewide.company_name) }}</span>{{ notBoldName(sitewide.company_name) }}</h2>
+                    <h5 class="header__name"><span>{{ boldName(sitewide.company_name) }}</span>{{ notBoldName(sitewide.company_name) }}</h5>
                 </nuxt-link>
             </div>
         </div>
@@ -96,7 +96,7 @@ export default {
         justify-content: space-between;
         overflow: hidden;
         padding: 0;
-        font-size: .6em;
+
     }
     .header__logo__and__name {
         display: flex;
@@ -112,6 +112,7 @@ export default {
         align-self: center;
         text-align: left;
         transition: color .4s;
+        line-height: 1em;
     }
     .header__name span:nth-of-type(1) {
         font-weight: 600;

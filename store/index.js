@@ -43,7 +43,6 @@ export const mutations = {
         state.sitewide = data;
     },
     setEmployees(state, data) {
-        console.log(data.list);
         state.employees = data.list;
     }
     

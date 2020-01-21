@@ -119,6 +119,8 @@ collections:
         fields:
         - { label: 'Show Intro', name: 'status', widget: 'boolean', default: true, required: false }
         - { label: 'Page Intro Header', name: 'page_intro_header', widget: 'string', required: false }
+        - { label: 'Page Intro Header - Line 2', name: 'page_intro_header_2', widget: 'string', required: false }
+        - { label: 'Page Intro Header - Line 3', name: 'page_intro_header_3', widget: 'string', required: false }
         - { label: 'Page Intro Para', name: 'page_intro_para', widget: 'text', required: false }
       - label: "Page Sections"
         name: "sections"
