@@ -1,0 +1,35 @@
+{
+  "name": "All",
+  "list": [
+    {
+      "name": "ClickBank",
+      "status": true,
+      "logo": "/img/clickbanklogo-small.png",
+      "website": "https://www.clickbank.com"
+    },
+    {
+      "name": "Has Offers (TUNE)",
+      "status": true,
+      "logo": "/img/hasofferslogo-small1.png",
+      "website": "https://www.tune.com"
+    },
+    {
+      "name": "Google Optimize",
+      "status": true,
+      "logo": "/img/google-optimize.png",
+      "website": "https://optimize.google.com/optimize/home/"
+    },
+    {
+      "name": "Google Analytics",
+      "status": true,
+      "logo": "/img/googleanalytics.png",
+      "website": "https://analytics.google.com/"
+    },
+    {
+      "name": "Click Funnels",
+      "status": true,
+      "logo": "/img/clickfunnels-logo.png",
+      "website": "https://www.clickfunnels.com"
+    }
+  ]
+}
