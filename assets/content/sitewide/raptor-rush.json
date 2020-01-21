@@ -17,7 +17,39 @@
         "text": "Name",
         "required": true,
         "short_name": "name",
-        "placeholder": "E.G. John Smith",
+        "placeholder": "E.G. Ian Malcolm",
+        "type": "text"
+      },
+      {
+        "text": "E-Mail",
+        "required": true,
+        "short_name": "email",
+        "placeholder": "E.G. johnhammond@ingen.com",
+        "type": "email"
+      },
+      {
+        "text": "Phone Number",
+        "required": false,
+        "short_name": "phone",
+        "type": "tel"
+      },
+      {
+        "text": "Company Name (If Applicable)",
+        "required": false,
+        "short_name": "company",
+        "placeholder": "Ingen Genetics",
+        "type": "text"
+      },
+      {
+        "text": "Your Current Website (If Applicable)",
+        "required": false,
+        "short_name": "current_website",
+        "type": "text"
+      },
+      {
+        "text": "How Can We Help You?",
+        "required": false,
+        "short_name": "message",
         "type": "text"
       }
     ],
