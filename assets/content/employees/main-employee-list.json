@@ -1,0 +1,23 @@
+{
+  "name": "Main Employee List",
+  "list": [
+    {
+      "name": "Audrey Roberts",
+      "status": true,
+      "title": "Affiliate Management",
+      "speciality": "Offer Setup and Analysis",
+      "email": "audrey@raptorrush.com",
+      "headshot": "/img/headshot-audrey-roberts.jpg",
+      "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "name": "Michael Roberts",
+      "status": true,
+      "title": "Front-End Web Developer",
+      "speciality": "Technology Support and Custom Implementations",
+      "email": "michael@raptorrush.com",
+      "headshot": "/img/headshot-michael-roberts-2.jpg",
+      "short_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+    }
+  ]
+}
