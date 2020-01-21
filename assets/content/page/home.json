@@ -13,5 +13,16 @@
     "status": true,
     "page_intro_header": "Lorem ipsum dolor sit amet consectetur.",
     "page_intro_para": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  }
+  },
+  "sections": [
+    {
+      "header": "Meet Us",
+      "status": true,
+      "section_text": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    }
+  ]
 }
