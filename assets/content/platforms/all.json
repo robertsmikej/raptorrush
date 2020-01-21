@@ -8,6 +8,12 @@
       "website": "https://www.clickbank.com"
     },
     {
+      "name": "Google Analytics",
+      "status": true,
+      "logo": "/img/googleanalytics.png",
+      "website": "https://analytics.google.com/"
+    },
+    {
       "name": "Has Offers (TUNE)",
       "status": true,
       "logo": "/img/hasofferslogo-small1.png",
@@ -18,12 +24,6 @@
       "status": true,
       "logo": "/img/google-optimize.png",
       "website": "https://optimize.google.com/optimize/home/"
-    },
-    {
-      "name": "Google Analytics",
-      "status": true,
-      "logo": "/img/googleanalytics.png",
-      "website": "https://analytics.google.com/"
     },
     {
       "name": "Click Funnels",
