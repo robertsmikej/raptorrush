@@ -30,6 +30,12 @@
       "status": true,
       "logo": "/img/clickfunnels-logo.png",
       "website": "https://www.clickfunnels.com"
+    },
+    {
+      "name": "Cake",
+      "status": true,
+      "logo": "/img/cake-logo.png",
+      "website": "https://getcake.com/"
     }
   ]
 }
