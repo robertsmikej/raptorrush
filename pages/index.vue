@@ -55,7 +55,7 @@ export default {
                 { 
                     hid: 'description',
                     name: 'description',
-                    content: ""
+                    content: "Affiliate Management and Technology Support for those who would rather focus on their offers than the other stuff."
                 },
                 { hid: 'robots', name: 'robots', content: 'index, follow' }
             ]

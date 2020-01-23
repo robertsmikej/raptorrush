@@ -56,6 +56,7 @@ export default {
 .employee__email {
     color: #FFF;
     text-decoration: none;
+    margin-top: 2px;
 }
 .employee__small__para {
     font-weight: 300;

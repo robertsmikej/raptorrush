@@ -86,7 +86,7 @@ export default {
     }
     .platforms__section__inner {
         max-width: 100%;
-        padding: 1vh 10px;
+        padding: 1vh 7px;
         overflow-x: scroll;
         justify-content: flex-start;
         -webkit-overflow-scrolling: touch;

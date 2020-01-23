@@ -70,6 +70,7 @@ export default {
     transition: all .5s;
     cursor: pointer;
     text-align: center;
+    font-weight: 500;
 }
 .site__button__inner:hover {
     background-color: var(--light-red) !important;
