@@ -116,14 +116,14 @@ main {
 h1 {
     font-size: 2.1em;
     line-height: 1.1em;
-    font-weight: 500;
+    font-weight: 300;
     margin: 10px 0 0;
     /* color: #FFF; */
 }
 h2 {
     font-size: 1.8em;
     line-height: 1em;
-    font-weight: 500;
+    font-weight: 400;
     margin: 4px 0;
 }
 h3 {
@@ -159,7 +159,7 @@ p {
 ul, li {
     font-size: 1em;
     line-height: 1.3em;
-    font-weight: 500;
+    font-weight: 400;
 }
 a {
     color: var(--dark-grey);

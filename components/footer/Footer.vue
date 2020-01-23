@@ -230,10 +230,12 @@ export default {
             justify-content: flex-start;
         }
         .footer__legalize {
-            margin: 20px 0 0;
+            margin: 10px 0 0;
+            justify-content: flex-start;
         }
         .footer__legalize p {
             text-align: center;
+            margin: 10px 0;
         }
         .footer__legalize a {
             text-align: center;

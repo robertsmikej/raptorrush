@@ -82,11 +82,11 @@ export default {
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 900px) {
     .platforms__section {
-        padding: 0 16px;
+        padding: 0;
     }
     .platforms__section__inner {
         max-width: 100%;
-        padding: 1vh 0;
+        padding: 1vh 10px;
         overflow-x: scroll;
         justify-content: flex-start;
         -webkit-overflow-scrolling: touch;
