@@ -125,7 +125,7 @@ export default {
     }
 }
 /* ----------------- MEDIA QUERY ------------------ */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .hero__inner {
         padding: 0;
     }
@@ -146,10 +146,6 @@ export default {
         width: 114%;
     }
 
-}
-/* ------------------ MEDIA QUERY ------------------ */
-@media screen and (max-width: 700px) {
-    
 }
 /* ------------------ MEDIA QUERY ------------------ */
 @media screen and (max-width: 600px) {
