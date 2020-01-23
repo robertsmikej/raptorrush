@@ -36,6 +36,12 @@
       "status": true,
       "logo": "/img/cake-logo.png",
       "website": "https://getcake.com/"
+    },
+    {
+      "name": "MaxWeb",
+      "status": true,
+      "logo": "/img/max-web-logo-1.png",
+      "website": "https://maxweb.com/"
     }
   ]
 }
